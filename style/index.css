@@ -6,3 +6,6 @@
     max-width:100%;
     /*CSS reset*/
 }
+header {
+    height: 80vh;
+}
