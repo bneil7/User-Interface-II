@@ -44,7 +44,18 @@ header nav{
     align-content: center;
     background-color: #fff;
 }
+    .nav-name{
+        width:25%;
+        font-size: 1.8rem;
+        letter-spacing: 1.2rem;
+        line-height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
 
+    }
 .links{
     height:20%;
     display:flex;
