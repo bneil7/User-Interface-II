@@ -14,6 +14,7 @@ html{
 }
 body{
     line-height: 3;
+    background-color: #cfb252;
 }
 h1, h2, h3, h4, h5{
     letter-spacing: 2px;
@@ -24,16 +25,15 @@ div{
  }
 /* Header Styles */
 header{
-    height:40vh;
-    margin:20px;
+    /* height:40vh;
     display: flex;
     justify-items: flex-start;
-    background-color: #cfb252;
+    background-color: #cfb252; */
     background-image:url('https://images.unsplash.com/photo-1526394931762-90052e97b376?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:fixed; */
 }
 /* nav styles */
 header nav{
@@ -43,19 +43,27 @@ header nav{
     justify-content: space-between;
     align-content: center;
     background-color: #fff;
+    height:40vh;
+    display: flex;
+    justify-items: flex-start;
+    background-color: #cfb252;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
 }
-    .nav-name{
-        width:25%;
-        font-size: 1.8rem;
-        letter-spacing: 1.2rem;
-        line-height: 2rem;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        align-content: center;
-        justify-content: center;
+.nav-name{
+    width:25%;
+    font-size: 1.8rem;
+    letter-spacing: 1.2rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
 
-    }
+}
 .links{
     height:20%;
     display:flex;
@@ -68,11 +76,19 @@ header nav{
     justify-items: flex-start;
 }
 .links a:hover{
-    opacity:80%;
+    color:dodgerblue;
     text-transform: uppercase;
 }
 /* end nav */
-
+.transparent-title{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    justify-self:center;
+    
+    /*dude. what. i'm tryna get this thing in the middle of the background*/
+} 
 
 /* end Header*/
 
