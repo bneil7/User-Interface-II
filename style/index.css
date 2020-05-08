@@ -1,1 +1,183 @@
 /* Add CSS styling here */
+/* General Styles */
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /* border:1px solid red; */
+    font-size:62.5%;
+    /*CSS reset*/
+}
+html{
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    line-height: 4;
+    background-color: #cfb252;
+}
+h1{
+    color:white;
+    letter-spacing: 1em;
+} 
+h2, h3, h4, h5{
+    letter-spacing:0.4em;
+    padding:10%;
+}
+
+/* Header Styles */
+header{
+    height:69vh;
+    background-image:url('https://images.unsplash.com/photo-1526394931762-90052e97b376?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+/* nav styles */
+nav{
+    height:30vh;
+    max-width:100%;
+    padding: 2% 5% 2% 5%;
+    margin: 1% 2;
+    display: flex;
+    justify-content: space-between;
+    justify-items:flex-end;
+}
+
+.header-name{
+    width:80%;
+    height:25%;
+    padding: 2% 5% 4% 5%;
+    font-size: 2rem;
+    letter-spacing: 1.2rem;
+    line-height: 2rem;
+}
+a{
+    color: crimson;
+    width:5%;
+    height:25%;
+    padding: 2% 5% 4% 5%;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+a:hover{
+    color:dodgerblue;
+    text-transform: uppercase;
+}
+/* end nav */
+.transparent-title{
+    color:white;
+    font-size: 4rem;
+    display: flex;
+    align-self: center;
+    justify-content:center;
+} 
+/* end Header*/
+
+/* gallery styles*/
+#gallery{
+    padding:4% 8%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+#gallery .title-name{
+    padding:2%;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.title-image{
+    justify-self: center;
+    align-self: center;
+    height:20%;
+    width:20%;
+}
+
+
+/* projects styles*/
+#projects{
+    width: 100%;
+}
+#projects h3{
+    text-align: center;
+    padding:1% 0;
+}
+#projects .boxes{
+    height:60%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#projects .boxes .box{
+    width:12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* video embed */
+#video{
+    display:flex;
+    justify-content: center;
+    padding:0;
+}
+iframe{
+    width: 40%;
+    height: 30%;
+    transition: 2s;
+}
+iframe:hover{
+    width:80%;
+    height:60%;
+}
+/* can probably learn how to make this stay expanded after clicking play by using js */
+@media(max-width:800px){
+    iframe:hover{
+        width:60%;
+        height:40%;
+}
+
+@media(max-width:500px){
+    header{
+        height:30vh;
+        background-image:url('https://images.unsplash.com/photo-1526394931762-90052e97b376?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        background-attachment:fixed;
+    }
+    nav{
+        height:10vh;
+        padding: 5%;
+        margin:1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .header-name{
+        width:100%;
+        /* height:25%;
+        padding:5%;
+        margin:1%; */
+        justify-content: center;
+        font-size: 1.1rem;
+        letter-spacing: 1rem;
+        line-height: 2rem;
+    }
+    a{
+        width:10%;
+        height:25%;
+        padding: 5%;
+        margin:1%;
+        /* font-size: 1.25rem;
+        line-height: 2.5rem; */
+    }
+    a:hover{
+        color:dodgerblue;
+        text-transform: uppercase;
+    }
+}
