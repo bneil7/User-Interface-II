@@ -5,7 +5,7 @@
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid red;
+    /* border:1px solid red; */
     font-size:62.5%;
     /*CSS reset*/
 }
@@ -73,12 +73,11 @@ a:hover{
     align-self: center;
     justify-content:center;
 } 
-
 /* end Header*/
 
 /* gallery styles*/
 #gallery{
-    padding:4%;
+    padding:4% 8%;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -93,7 +92,7 @@ a:hover{
 .title-image{
     justify-self: center;
     align-self: center;
-    height: 20%;
+    height:20%;
     width:20%;
 }
 
@@ -107,6 +106,7 @@ a:hover{
     padding:1% 0;
 }
 #projects .boxes{
+    height:60%;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -126,19 +126,58 @@ a:hover{
     padding:0;
 }
 iframe{
-    width: 224px;
-    height: 126px;
+    width: 40%;
+    height: 30%;
     transition: 2s;
 }
 iframe:hover{
-    width:640px;
-    height:360px;
+    width:80%;
+    height:60%;
 }
 /* can probably learn how to make this stay expanded after clicking play by using js */
 @media(max-width:800px){
-    
+    iframe:hover{
+        width:60%;
+        height:40%;
 }
 
 @media(max-width:500px){
+    header{
+        height:30vh;
+        background-image:url('https://images.unsplash.com/photo-1526394931762-90052e97b376?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        background-attachment:fixed;
+    }
+    nav{
+        height:10vh;
+        padding: 5%;
+        margin:1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
     
+    .header-name{
+        width:100%;
+        /* height:25%;
+        padding:5%;
+        margin:1%; */
+        justify-content: center;
+        font-size: 1.1rem;
+        letter-spacing: 1rem;
+        line-height: 2rem;
+    }
+    a{
+        width:10%;
+        height:25%;
+        padding: 5%;
+        margin:1%;
+        /* font-size: 1.25rem;
+        line-height: 2.5rem; */
+    }
+    a:hover{
+        color:dodgerblue;
+        text-transform: uppercase;
+    }
 }
