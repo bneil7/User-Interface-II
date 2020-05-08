@@ -19,7 +19,6 @@ body{
 h1{
     color:white;
     letter-spacing: 2px;
-    padding:10% 0;
 } 
 h2, h3, h4, h5{
     letter-spacing: 2px;
@@ -31,6 +30,7 @@ div{
 /* Header Styles */
 header{
     height:69vh;
+    background-color: blue;
     background-image:url('https://images.unsplash.com/photo-1526394931762-90052e97b376?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,30 +39,24 @@ header{
 }
 /* nav styles */
 nav{
-    width:25%;
-    height:20%;
-    justify-content: space-evenly;
-    align-content: flex-end;
-    background-color: #fff;
-    justify-items: flex-start;
-    background-color: #cfb252;
+    height:30vh;
+    display: flex;
 }
-.nav-name{
+.header-name{
     width:25%;
+    height:25%;
     font-size: 1.8rem;
     letter-spacing: 1.2rem;
     line-height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    justify-content: center;
-
 }
 a{
     color: crimson;
-    display:flex;
-    justify-items: flex-start;
+    width:3%;
+    height:6%;
+    background-color: transparent;
+    line-height: 1.5;
+    display: flex;
+    justify-self: flex-end;
 }
 a:hover{
     color:dodgerblue;
